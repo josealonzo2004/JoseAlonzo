@@ -26,23 +26,23 @@
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
-                        <a href="{% url 'tasks' %}" class="nav-link">tasks pending</a>
+                        <a href="{% url 'tasks' %}" class="nav-link">Tareas Pendientes</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{% url 'tasks_completed' %}" class="nav-link">tasks completed</a>
+                        <a href="{% url 'tasks_completed' %}" class="nav-link">Tareas Completadas</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/create/task/" class="nav-link">Create task</a>
+                        <a href="/create/task/" class="nav-link">Crear Tarea</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/logout" class="nav-link">Logout</a>
+                        <a href="/logout" class="nav-link">Salir</a>
                     </li>
                     {% else %}
                     <li class="nav-item">
-                        <a href="/signup" class="nav-link">signup</a>
+                        <a href="/signup" class="nav-link">Iniciar Sesion</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/signin" class="nav-link">signin</a>
+                        <a href="/signin" class="nav-link">Registrate</a>
                     </li>
                     {% endif %}
                 </ul>
