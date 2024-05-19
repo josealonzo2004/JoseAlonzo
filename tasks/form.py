@@ -8,5 +8,6 @@ class TaskForm(forms.ModelForm):
         widgets = {
             'title': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Write a title'}),
             'description': forms.Textarea(attrs={'class': 'form-control', 'placeholder': 'Write a description'}),
+            'cuerpo': forms.Textarea(attrs={'class': 'form-control', 'placeholder': 'Write a body'}),
             'important': forms.CheckboxInput(attrs={'class': 'form-check-imput m-auto'})
         }
